@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ScoreKeeper</string>
+    <string name="team_eagles">Team Eagles</string>
+    <string name="field_goal">Field goal</string>
+    <string name="safety">Safety</string>
+    <string name="extra_point">Extra point</string>
+    <string name="touchdown">Touchdown</string>
+    <string name="team_patriots">Team Patriots</string>
+    <string name="reset">Reset</string>
+    <string name="_0">0</string>
+
+</resources>
