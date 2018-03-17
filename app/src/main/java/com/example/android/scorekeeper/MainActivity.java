@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide(); //<< this
         setContentView(R.layout.activity_main);
-    }
+
+
+}
 
 
     /**
