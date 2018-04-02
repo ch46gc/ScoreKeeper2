@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_width">0dp</dimen>
+    <dimen name="padding">0dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="textSize_2">18sp</dimen>
+    <dimen name="marginTop">2dp</dimen>
+    <dimen name="textSize_3">40sp</dimen>
+    <dimen name="layout_margin_right">16dp</dimen>
+    <dimen name="layout_margin_left">16dp</dimen>
+    <dimen name="layout_margin_start">16dp</dimen>
+    <dimen name="layout_margin_end">16dp</dimen>
+    <dimen name="layout_margin_bottom">0dp</dimen>
+    <dimen name="layout_margin_top">0dp</dimen>
+    <dimen name="layout_margin_top_2">16dp</dimen>
+    <dimen name="layout_width_2">2dp</dimen>
+</resources>

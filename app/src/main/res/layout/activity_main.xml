@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,11 +17,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="center"
-        android:src="@drawable/football" />
+        android:src="@drawable/football"
+        android:contentDescription="@string/description" />
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,22 +29,22 @@
         android:id="@+id/linearLayout">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/layout_width"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
             tools:context="com.example.android.scorekeeper.MainActivity">
 
             <TextView
+                android:id='@+id/team_eagles_name'
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:padding="0dp"
+                android:padding="@dimen/padding"
                 android:text="@string/team_eagles"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize_2"
                 android:textStyle="bold" />
 
             <TextView
@@ -52,73 +52,86 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:padding="0dp"
+                android:padding="@dimen/padding"
                 android:text="@string/_0"
-                android:textColor="#000000"
-                android:textSize="40sp" />
+                android:textColor="@color/textColor_2"
+                android:textSize="@dimen/textSize_3" />
 
             <Button
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="#004D40"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginEnd="@dimen/layout_margin_end"
+                android:background="@color/button_bg_color"
                 android:onClick="addThreeForTeamEagles"
                 android:text="@string/field_goal"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="#004D40"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginEnd="@dimen/layout_margin_end"
+                android:background="@color/button_bg_color"
                 android:onClick="addTwoForTeamEagles"
                 android:text="@string/safety"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="#004D40"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginEnd="@dimen/layout_margin_end"
+                android:background="@color/button_bg_color"
                 android:onClick="addOneForTeamEagles"
                 android:text="@string/extra_point"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="#004D40"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginEnd="@dimen/layout_margin_end"
+                android:background="@color/button_bg_color"
                 android:onClick="addSixForTeamEagles"
                 android:text="@string/touchdown"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
+
         </LinearLayout>
 
+        <View
+            android:layout_width="@dimen/layout_width_2"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/layout_margin_top_2"
+            android:background="@android:color/white" />
+
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/layout_width"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
@@ -126,13 +139,14 @@
 
 
             <TextView
+                android:id="@+id/team_patriots_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:padding="0dp"
+                android:padding="@dimen/padding"
                 android:text="@string/team_patriots"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize_2"
                 android:textStyle="bold" />
 
             <TextView
@@ -141,67 +155,76 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:padding="0dp"
+                android:padding="@dimen/padding"
                 android:text="@string/_0"
-                android:textColor="#000000"
-                android:textSize="40sp" />
+                android:textColor="@color/textColor_2"
+                android:textSize="@dimen/textSize_3" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="#1A237E"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginEnd="@dimen/layout_margin_end"
+                android:background="@color/button_bg_1"
                 android:onClick="addThreeForTeamPatriots"
                 android:text="@string/field_goal"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="#1A237E"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginEnd="@dimen/layout_margin_end"
+                android:background="@color/button_bg_1"
                 android:onClick="addTwoForTeamPatriots"
                 android:text="@string/safety"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="#1A237E"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginEnd="@dimen/layout_margin_end"
+                android:background="@color/button_bg_1"
                 android:onClick="addOneForTeamPatriots"
                 android:text="@string/extra_point"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="#1A237E"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginEnd="@dimen/layout_margin_end"
+                android:background="@color/button_bg_1"
                 android:onClick="addSixForTeamPatriots"
                 android:text="@string/touchdown"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
         </LinearLayout>
+
 
     </LinearLayout>
 
@@ -210,12 +233,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="2dp"
-        android:background="#1A237E"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@color/button_bg_1"
         android:onClick="resetScore"
         android:text="@string/reset"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize" />
 
 
 </RelativeLayout>
