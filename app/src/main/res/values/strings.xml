@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">ScoreKeeper</string>
     <string name="team_eagles">Team Eagles</string>
     <string name="field_goal">Field goal</string>

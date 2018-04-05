@@ -12,14 +12,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="center"
         android:src="@drawable/football"
         android:contentDescription="@string/description" />
-
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -137,7 +135,6 @@
             android:orientation="vertical"
             tools:context="com.example.android.scorekeeper.MainActivity">
 
-
             <TextView
                 android:id="@+id/team_patriots_name"
                 android:layout_width="match_parent"
@@ -150,7 +147,6 @@
                 android:textStyle="bold" />
 
             <TextView
-
                 android:id="@+id/team_patriots_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
